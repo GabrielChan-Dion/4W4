@@ -14,7 +14,7 @@ body{
 .global > header,
 .global > footer{
     flex: 0 1 900px;
-    background-color: rgba(#cec2f7, .3);
+    background-color: var(--couleur-arriere-global);
     text-align: center;
     padding: 5rem 1rem;
 }

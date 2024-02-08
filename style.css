@@ -21,6 +21,8 @@ Ce thème à été déveloper dans le cadre du cours 4w4
   --couleur-arriere-evenement: rgb(99, 248, 156);
   --couleur-arriere-footer: #6cffc2;
   --couleur-arriere-gallerie: #8efc80;
+  --couleur-arriere-global: #8097ff3b;
+  --couleur-font-H1: #00000096;
 }
 
 /*  ////////////////////////// */
@@ -31,7 +33,7 @@ Sélecteur textuel de base
 */
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--couleur-font-H1);
 }
 
 h2 {
@@ -41,22 +43,22 @@ h2 {
 
 h3 {
   font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.45);
 }
 
 h4 {
   font-size: clamp(0.75rem, 0.2813rem + 1.5vw, 1.125rem);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 h5 {
   font-size: clamp(0.625rem, 0.1563rem + 1.5vw, 1rem);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.35);
 }
 
 h6 {
   font-size: clamp(0.5rem, 0.0313rem + 1.5vw, 0.875rem);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*  ////////////////////////// */
@@ -78,7 +80,7 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  background-color: rgba(206, 194, 247, 0.3);
+  background-color: var(--couleur-arriere-global);
   text-align: center;
   padding: 5rem 1rem;
 }
