@@ -1,31 +1,36 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Prompt', sans-serif;
 }
 
 .global{
     display: flex;
     justify-content: center;
+    min-height: 20vh;
 }
 
 .global > section, 
 .global > header,
 .global > footer{
-    width: 1100px;
-    border: 1px solid red;
+    flex: 0 1 900px;
+    background-color: rgba(#cec2f7, .3);
+    text-align: center;
+    padding: 5rem 1rem;
 }
 
 #entete{
 background-color: var(--couleur-arriere-entete);
 }
 #accueil{
+    background-color: var(--couleur-arriere-accueil);
 }
 #galerie{
-
+    background-color: var(--couleur-arriere-gallerie);
 }
 #evenement{
-
+    background-color: var(--couleur-arriere-evenement);
 }
 #footer{
-
+    background-color: var(--couleur-arriere-footer);
 }

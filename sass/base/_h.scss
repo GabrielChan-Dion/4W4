@@ -3,10 +3,12 @@ Sélecteur textuel de base
 */
 
 h1{
-    font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+    font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+    color: rgba( #000, 0.6);
 }
 h2{
-
+    font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+    color: rgba( #000, 0.5);
 }
 h3{
 

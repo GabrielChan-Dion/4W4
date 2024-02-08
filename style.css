@@ -16,10 +16,11 @@ Ce thème à été déveloper dans le cadre du cours 4w4
 /*  variable css   */
 /*  ////////////////////////// */
 :root {
-  --couleur-arriere-entete: #ccc;
-  --couleur-arriere-accueil: #ddd;
-  --couleur-arriere-evenement: #dd1;
-  --couleur-arriere-footer: #aaa;
+  --couleur-arriere-entete: #bdfa83;
+  --couleur-arriere-accueil: #a7ff75;
+  --couleur-arriere-evenement: rgb(99, 248, 156);
+  --couleur-arriere-footer: #6cffc2;
+  --couleur-arriere-gallerie: #8efc80;
 }
 
 /*  ////////////////////////// */
@@ -29,7 +30,13 @@ Ce thème à été déveloper dans le cadre du cours 4w4
 Sélecteur textuel de base
 */
 h1 {
+  font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /*  ////////////////////////// */
@@ -38,20 +45,40 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
   display: flex;
   justify-content: center;
+  min-height: 20vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  width: 1100px;
-  border: 1px solid red;
+  flex: 0 1 900px;
+  background-color: rgba(206, 194, 247, 0.3);
+  text-align: center;
+  padding: 5rem 1rem;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-gallerie);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
 }
