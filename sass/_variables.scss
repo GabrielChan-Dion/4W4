@@ -1,4 +1,5 @@
 :root{
+    /*
     --couleur-arriere-entete : #bdfa83;
     --couleur-arriere-accueil : #a7ff75;
     --couleur-arriere-evenement : rgb(99, 248, 156);
@@ -7,4 +8,21 @@
 
     --couleur-arriere-global : #8097ff3b;
     --couleur-font-H1 : #00000096;
+    */
+
+
+    --couleur-arriere-entete : hsl(0, 100%, 50%);
+    --couleur-arriere-accueil : hsl(60, 100% , 50%);
+    --couleur-arriere-evenement : hsl(120 , 100% , 50%);
+    --couleur-arriere-gallerie : hsl(180, 100%, 50%);
+    --couleur-arriere-footer : hsl(240, 100%, 50%);
+    
+
+    --couleur-entete : hsl(0, 100%, 15%);
+    --couleur-accueil : hsl(60, 100%, 15%);
+    --couleur-evenement : hsl(120 , 100% , 15%);
+    --couleur-gallerie : hsl(180, 100%, 15%);
+    --couleur-footer : hsl(240, 100%, 15%);
+
+    --couleur-arriere-global : #8097ff3b;
 }

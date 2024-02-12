@@ -16,13 +16,27 @@ Ce thème à été déveloper dans le cadre du cours 4w4
 /*  variable css   */
 /*  ////////////////////////// */
 :root {
-  --couleur-arriere-entete: #bdfa83;
-  --couleur-arriere-accueil: #a7ff75;
-  --couleur-arriere-evenement: rgb(99, 248, 156);
-  --couleur-arriere-footer: #6cffc2;
-  --couleur-arriere-gallerie: #8efc80;
+  /*
+  --couleur-arriere-entete : #bdfa83;
+  --couleur-arriere-accueil : #a7ff75;
+  --couleur-arriere-evenement : rgb(99, 248, 156);
+  --couleur-arriere-footer : #6cffc2;
+  --couleur-arriere-gallerie : #8efc80;
+
+  --couleur-arriere-global : #8097ff3b;
+  --couleur-font-H1 : #00000096;
+  */
+  --couleur-arriere-entete: hsl(0, 100%, 50%);
+  --couleur-arriere-accueil: hsl(60, 100% , 50%);
+  --couleur-arriere-evenement: hsl(120 , 100% , 50%);
+  --couleur-arriere-gallerie: hsl(180, 100%, 50%);
+  --couleur-arriere-footer: hsl(240, 100%, 50%);
+  --couleur-entete: hsl(0, 100%, 15%);
+  --couleur-accueil: hsl(60, 100%, 15%);
+  --couleur-evenement: hsl(120 , 100% , 15%);
+  --couleur-gallerie: hsl(180, 100%, 15%);
+  --couleur-footer: hsl(240, 100%, 15%);
   --couleur-arriere-global: #8097ff3b;
-  --couleur-font-H1: #00000096;
 }
 
 /*  ////////////////////////// */
@@ -33,12 +47,10 @@ Sélecteur textuel de base
 */
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: var(--couleur-font-H1);
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgba(0, 0, 0, 0.5);
 }
 
 h3 {
@@ -87,20 +99,25 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-gallerie);
+  color: var(--couleur-galerie);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
