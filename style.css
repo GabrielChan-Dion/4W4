@@ -28,7 +28,7 @@ Ce thème à été déveloper dans le cadre du cours 4w4
   */
   --nb-element: 5;
   --increment-angle: calc(360/var(--nb-element));
-  --angle-initial: 180;
+  --angle-initial: 224;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
@@ -38,17 +38,32 @@ Ce thème à été déveloper dans le cadre du cours 4w4
   --l-couleur-arriere: 50%;
   --s-couleur: 100%;
   --l-couleur: 15%;
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere) , var(--l-couleur-arriere));
-  --couleur-arriere-evenement: hsl(var(--hu3) , var(--s-couleur-arriere) , var(--l-couleur-arriere));
-  --couleur-arriere-gallerie: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  /*
+      --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
+      --couleur-arriere-accueil : hsl(var(--hu2), var(--s-couleur-arriere) , var(--l-couleur-arriere));
+      --couleur-arriere-evenement : hsl(var(--hu3) , var(--s-couleur-arriere) , var(--l-couleur-arriere));
+      --couleur-arriere-gallerie : hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
+      --couleur-arriere-footer : hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+
+
+      --couleur-entete : hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+      --couleur-accueil : hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
+      --couleur-evenement : hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
+      --couleur-gallerie : hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
+      --couleur-footer : hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+
+      --couleur-arriere-global : #8097ff3b;
+      */
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 55%);
+  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere) , 65%);
+  --couleur-arriere-gallerie: hsl(var(--hu4), var(--s-couleur-arriere), 80%);
+  --couleur-arriere-evenement: hsl(var(--hu1) , var(--s-couleur-arriere) , 75%);
+  --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 85%);
   --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
   --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
   --couleur-evenement: hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
   --couleur-gallerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
   --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
-  --couleur-arriere-global: #8097ff3b;
 }
 
 /*  ////////////////////////// */
@@ -104,7 +119,6 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  background-color: var(--couleur-arriere-global);
   text-align: center;
   padding: 5rem 1rem;
 }
@@ -112,6 +126,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -122,14 +137,72 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-gallerie);
   color: var(--couleur-galerie);
+  z-index: 1;
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-evenement) 50%);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.vague {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.custom-shape-divider-bottom-1708027394 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708027394 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-bottom-1708027394 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background-color: var(--couleur-arriere-gallerie);
 }
