@@ -51,9 +51,8 @@ Ce thème à été déveloper dans le cadre du cours 4w4
       --couleur-evenement : hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
       --couleur-gallerie : hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
       --couleur-footer : hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
-
-      --couleur-arriere-global : #8097ff3b;
       */
+  --couleur-arriere-global: #5b6cb63b;
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 55%);
   --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere) , 65%);
   --couleur-arriere-gallerie: hsl(var(--hu4), var(--s-couleur-arriere), 80%);
@@ -64,6 +63,7 @@ Ce thème à été déveloper dans le cadre du cours 4w4
   --couleur-evenement: hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
   --couleur-gallerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
   --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+  --couleur-button: #E0C304;
 }
 
 /*  ////////////////////////// */
@@ -121,6 +121,34 @@ body {
   flex: 0 1 900px;
   text-align: center;
   padding: 5rem 1rem;
+}
+
+.button {
+  background-color: var(--couleur-arriere-footer);
+  padding: 1.2em;
+  text-decoration: none;
+  color: var(--couleur-galerie);
+  border-radius: 10%;
+  border: 1px solid var(--couleur-accueil);
+  font-size: 1.5em;
+  transform: background-color;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--couleur-button);
+  transition: background-color 0.2s;
+  transform: background-color;
+}
+
+p {
+  color: var(--couleur-accueil);
+  width: 40vw;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--couleur-arriere-global);
+  border-radius: 3%;
 }
 
 #entete {

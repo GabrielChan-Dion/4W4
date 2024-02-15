@@ -37,9 +37,9 @@
     --couleur-evenement : hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
     --couleur-gallerie : hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
     --couleur-footer : hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
-
-    --couleur-arriere-global : #8097ff3b;
     */
+    --couleur-arriere-global : #5b6cb63b;
+    
     --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), 55%);
     --couleur-arriere-accueil : hsl(var(--hu1), var(--s-couleur-arriere) , 65%);
     --couleur-arriere-gallerie : hsl(var(--hu4), var(--s-couleur-arriere), 80%);
@@ -52,4 +52,6 @@
     --couleur-evenement : hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
     --couleur-gallerie : hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
     --couleur-footer : hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+
+    --couleur-button : #E0C304;
 }

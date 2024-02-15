@@ -18,6 +18,31 @@ body{
     text-align: center;
     padding: 5rem 1rem;
 }
+.button{
+    background-color: var(--couleur-arriere-footer);
+    padding: 1.2em;
+    text-decoration: none;
+    color: var(--couleur-galerie);
+    border-radius: 10%;
+    border: 1px solid var(--couleur-accueil);
+    font-size: 1.5em;
+    transform: background-color;
+    transition: background-color 0.2s;
+}
+.button:hover{
+    background-color: var(--couleur-button);
+    transition: background-color 0.2s;
+    transform: background-color;
+}
+p{
+    color: var(--couleur-accueil);
+    width: 40vw;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--couleur-arriere-global);
+    border-radius: 3%;
+}
 
 #entete{
 background-color: var(--couleur-arriere-entete);
