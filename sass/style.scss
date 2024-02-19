@@ -22,11 +22,17 @@ Ce thème à été déveloper dans le cadre du cours 4w4
 /*  Règles de base   */
 /*  ////////////////////////// */
 @import "base/h";
+@import "base/bouton";
+@import "base/liens";
 
 /*  ////////////////////////// */
 /*  Règles de la pagination   */
 /*  ////////////////////////// */
 @import "layout";
+
+@import "entete";
+
+
 
 @import "effet/vague";
 

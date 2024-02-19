@@ -1,0 +1,15 @@
+button {
+    font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
+    padding: 1em;
+    font-size: 2em;
+    background-image: linear-gradient(#ffbed4, #ff89b6);
+    margin-bottom: 3em;
+
+    &:hover{ // button:hover
+        background-image: linear-gradient(#d6abfa, #e74bb3);
+    }
+    &:active{ //button:active
+        background-image: linear-gradient(#faabb8, #e74b6d);
+    }
+}
+
