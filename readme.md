@@ -5,7 +5,6 @@
 ### Continuer la version du laboratoire #2
 - Dossier Sass
 - style.scss
--Utilisations de différentes technique pour élaboré une palette de couleur
 -utilisation de la règle 60-30-10
 -utilisations de différentes technique pour élaborer une palette de couleur
 -monochrome une seule teinte et on fait varier la saturation et la luminosité
@@ -18,8 +17,6 @@
 -ajout de nouveux éléments HTML
 
 À réaliser :
-- Compléter chacune des règle de style des éléments "H"
-- Changer les couleurs de background et couleur des "H"
 - Améliorer le design général sans être trop spécifique
 -Ajouter plusieurs variables
 - Créer plusieurs commit

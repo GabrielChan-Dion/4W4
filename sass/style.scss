@@ -30,10 +30,26 @@ Ce thème à été déveloper dans le cadre du cours 4w4
 /*  ////////////////////////// */
 @import "layout";
 
+/*  ////////////////////////// */
+/*  Les sections de la page   */
+/*  ////////////////////////// */
 @import "entete";
 
+@import "footer";
 
+/*  ////////////////////////// */
+/*  Les effets   */
+/*  ////////////////////////// */
 
 @import "effet/vague";
 
 @import "effet/diagonal";
+
+
+/*  ////////////////////////// */
+/*  Les composantes */
+/*  ////////////////////////// */
+
+@import "composant/recherche";
+
+@import "composant/sociaux";

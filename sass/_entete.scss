@@ -5,3 +5,9 @@
     background-size: 400px;
     margin-left: 2em;
 }
+
+@media screen and (max-width: 992px){
+    .entete__header{
+        background-position: center;
+    }
+}

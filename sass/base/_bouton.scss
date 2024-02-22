@@ -1,15 +1,18 @@
-button {
+button.entete__button{
     font-size: clamp(1.25rem, 0.2083rem + 3.3333vw, 2.5rem);
     padding: 1em;
     font-size: 2em;
-    background-image: linear-gradient(#ffbed4, #ff89b6);
+    background-image: linear-gradient(var(--couleur-h1), var(--couleur-h3));
     margin-bottom: 3em;
+    border-radius: 5%;
+    border: 5px solid white;
+    color: white;
 
     &:hover{ // button:hover
-        background-image: linear-gradient(#d6abfa, #e74bb3);
+        background-image: linear-gradient(var(--couleur-button-hover), var(--couleur-h3));
     }
     &:active{ //button:active
-        background-image: linear-gradient(#faabb8, #e74b6d);
+        background-image: linear-gradient(var(--couleur-button-hover), var(--couleur-button-hover));
     }
 }
 

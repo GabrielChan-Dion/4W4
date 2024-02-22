@@ -1,0 +1,18 @@
+.sociaux{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sociaux svg{
+    background-image: linear-gradient(var(--couleur-h1), var(--couleur-h3));
+    border-radius: 10%;
+    padding: 1rem;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.sociaux svg:hover{
+    background-image: linear-gradient(var(--couleur-button-hover), var(--couleur-h3));
+    border: 2px solid white;
+}
