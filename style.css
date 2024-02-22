@@ -64,8 +64,8 @@ Ce thème à été déveloper dans le cadre du cours 4w4
   --couleur-evenement: hsl(var(--hu1) , var(--s-couleur-arriere) , 45%);
   --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 50%);
   --couleur-lien: hsl(var(--hu2), 50%, 65% , 0.9);
-  --couleur-lien-hover: hsl(var(--hu2), 50%, 65% , 0.9);
-  --couleur-lien-visited: hsl(var(--hu2), 50%, 65% , 0.9);
+  --couleur-lien-hover: hsl(var(--hu3), 50%, 50% , 0.6);
+  --couleur-lien-visited: hsl(var(--hu2), 50%, 40% , 0.3);
   --couleur-h1: hsl(var(--hu2), 50%, 65% , 0.9);
   --couleur-h2: hsl(var(--hu2), 50%, 65% , 0.8);
   --couleur-h3: hsl(var(--hu2), 50%, 65% , 0.7);
