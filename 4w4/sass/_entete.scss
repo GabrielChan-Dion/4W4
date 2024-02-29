@@ -1,0 +1,13 @@
+.entete__header{
+    background-image: url("images/Fauna.png");
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    background-size: 400px;
+    margin-left: 2em;
+}
+
+@media screen and (max-width: 992px){
+    .entete__header{
+        background-position: center;
+    }
+}

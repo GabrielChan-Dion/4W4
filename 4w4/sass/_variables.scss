@@ -1,0 +1,69 @@
+:root{
+    /*
+    --couleur-arriere-entete : #bdfa83;
+    --couleur-arriere-accueil : #a7ff75;
+    --couleur-arriere-evenement : rgb(99, 248, 156);
+    --couleur-arriere-footer : #6cffc2;
+    --couleur-arriere-gallerie : #8efc80;
+
+    --couleur-arriere-global : #8097ff3b;
+    --couleur-font-H1 : #00000096;
+    */
+    --nb-element : 5;
+    --increment-angle: calc(360/var(--nb-element));
+    --angle-initial: 145;
+    --hu1 : var(--angle-initial);
+    --hu2 : calc(var(--hu1) + var(--increment-angle));
+    --hu3 : calc(var(--hu2) + var(--increment-angle));
+    --hu4 : calc(var(--hu3) + var(--increment-angle));
+    --hu5 : calc(var(--hu4) + var(--increment-angle));
+
+    //couleur arrière-plan
+    --s-couleur-arriere : 100%; //saturation
+    --l-couleur-arriere: 50%;  //luminosité
+    //couleur avant-plan
+    --s-couleur: 100%; //saturation
+    --l-couleur : 15%; //luminosité
+/*
+    --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-arriere-accueil : hsl(var(--hu2), var(--s-couleur-arriere) , var(--l-couleur-arriere));
+    --couleur-arriere-evenement : hsl(var(--hu3) , var(--s-couleur-arriere) , var(--l-couleur-arriere));
+    --couleur-arriere-gallerie : hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-arriere-footer : hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    
+
+    --couleur-entete : hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+    --couleur-accueil : hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
+    --couleur-evenement : hsl(var(--hu3), var(--s-couleur) , var(--l-couleur));
+    --couleur-gallerie : hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
+    --couleur-footer : hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+    */
+    --couleur-arriere-global : #96aaff3b;
+    
+    --couleur-arriere-entete : hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+    --couleur-arriere-accueil : hsl(var(--hu1), var(--s-couleur-arriere) , 80%);
+    --couleur-arriere-gallerie : hsl(var(--hu2), var(--s-couleur-arriere), 80%);
+    --couleur-arriere-evenement : hsl(var(--hu1) , var(--s-couleur-arriere) , 80%);
+    --couleur-arriere-footer : hsl(var(--hu1), var(--s-couleur-arriere), 95%);
+    
+    --couleur-entete : hsl(var(--hu1), var(--s-couleur-arriere), 30%);
+    --couleur-accueil : hsl(var(--hu1), var(--s-couleur-arriere) , 35%);
+    --couleur-gallerie : hsl(var(--hu4), var(--s-couleur-arriere), 40%);
+    --couleur-evenement : hsl(var(--hu1) , var(--s-couleur-arriere) , 45%);
+    --couleur-footer : hsl(var(--hu1), var(--s-couleur-arriere), 50%);
+  
+
+
+    --couleur-lien: hsl(var(--hu2), 50%, 65% , 0.9);
+    --couleur-lien-hover: hsl(var(--hu3), 50%, 50% , 0.6);
+    --couleur-lien-visited: hsl(var(--hu2), 50%, 40% , 0.3);
+
+    --couleur-h1 : hsl(var(--hu2), 50%, 65% , 0.9);
+    --couleur-h2 : hsl(var(--hu2), 50%, 65% , 0.8);
+    --couleur-h3 : hsl(var(--hu2), 50%, 65% , 0.7);
+    --couleur-h4 : hsl(var(--hu2), 50%, 65% , 0.6);
+    --couleur-h5 : hsl(var(--hu2), 50%, 65% , 0.5);
+    --couleur-h6 : hsl(var(--hu2), 50%, 65% , 0.4);
+
+    --couleur-button-hover : hsl(var(--hu3), 50%, 60% , 0.8);
+}
